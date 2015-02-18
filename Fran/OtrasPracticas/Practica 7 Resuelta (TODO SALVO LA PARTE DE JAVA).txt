@@ -1,0 +1,16 @@
+1.
+a- No Dirigido
+b- Dirigido
+c- No Dirigido.
+d- Dirigido
+
+2. Si un Grafo no Dirigido tiene N Vertices, puede tener N Aristas. Si fuera dirigido, pero sin Aristas hacia si mismo, podria tener N*N Aristas.
+
+3. Los grafos densos tienen mas aristas. Seria mas apropiado calcular el T de ejecucion a partir del numero de Aristas. Si fuera disperso, seria apropiado calcularlo a partir del numero de Vertices.
+
+7. El Tiempo de ejecucion fue calculado por la profesora en la teoria, esta anotado en mis apuntes.
+
+8. 1 - 2 - 5 - 7 - 3 - 4 - 6
+
+
+

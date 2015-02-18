@@ -1,0 +1,36 @@
+package tp4;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		ArbolGeneral<Integer> ag = new ArbolGeneral<Integer>(1); 
+		ArbolGeneral<Integer> a2 = new ArbolGeneral<Integer>(2);
+		ArbolGeneral<Integer> a3 = new ArbolGeneral<Integer>(3); 
+		ArbolGeneral<Integer> a4 = new ArbolGeneral<Integer>(4);
+		ArbolGeneral<Integer> a5 = new ArbolGeneral<Integer>(5);
+		ArbolGeneral<Integer> a6 = new ArbolGeneral<Integer>(6);
+		ArbolGeneral<Integer> a7 = new ArbolGeneral<Integer>(7);
+		ArbolGeneral<Integer> a8 = new ArbolGeneral<Integer>(8);
+		ArbolGeneral<Integer> a9 = new ArbolGeneral<Integer>(9);
+		
+		
+		ag.agregarHijo(a2);
+		ag.agregarHijo(a3);
+		ag.agregarHijo(a4);
+		ag.agregarHijo(a5);
+		ag.agregarHijo(a6);
+		ag.agregarHijo(a7);
+		ag.agregarHijo(a8);
+		ag.agregarHijo(a9);
+		
+		
+		for (int i = 2; i < 10; i++){
+			System.out.println("Dato: "+i+"  - Nivel: "+ag.nivel(i));
+		}
+		System.out.println("Prueba para Arbol de solo una hoja");
+		System.out.println("Dato: 5  - Nivel: "+a5.nivel(5));
+
+	}
+
+}

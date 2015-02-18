@@ -1,0 +1,8 @@
+En la ventana principal del programa, fijate que a la izquierda del botón Run ( la flechita verde y blanca ), esta el botón del Debbug, apretá la flechita negra que
+ señala para abajo y seleccioná Run Configuration, te va a abrir la ventana Debug Configuration.
+A la izquierda tenés como un panel ( Eclipse Application, Java Applet, Java Application, etc ), dale doble clik a Java Aplication, te va a abrir
+ una pestaña nueva, apretá el botón search y seleccioná lo que vas a debagiar, apretá apply y después Debug, te va a saltar un cartel para que confirmes, 
+mandale que sí.
+Después te va a abrir el debug. Fijate en la solapa que tenes el codigo, hacé click DERECHO bien al borde y te abre un menu, fijate que dice breakpoint, 
+bueno apretá ahi. Y haces lo mismo en los lugares que quieras poner los break. Después apretá F8 para hacerlo correr, acordate que f8 te ejecuta un bloque 
+y f me parece que lo hace linea a linea
