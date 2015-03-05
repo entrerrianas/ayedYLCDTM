@@ -11,6 +11,7 @@ public class AppPilaDeEnteros{
 		
 		p2 = p1;
 	
+		@SuppressWarnings("unused")
 		int valor2 = p2.desapilar();
 		System.out.println("El valor del topé es: "+ p1.desapilar());
 	}

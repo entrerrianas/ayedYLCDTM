@@ -28,7 +28,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 	public T elemento(int pos) {
 		if (pos < 1 || pos > this.tamanio())
 			return null;
-		NodoGenerico n = this.inicio;
+		NodoGenerico<T> n = this.inicio;
 		while (pos-- > 1) //Pregunta con el valor de pos y luego decrementa
 			n = n.getSiguiente();
 		return (T) n.getDato();
@@ -39,14 +39,14 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		if (pos < 1 || pos > this.tamanio() + 1) // Si tengo 3 elementos no sgregar en la posicion 5 porq falta el 4to elem
 			return false;
 		this.tamanio++;
-		NodoGenerico aux = new NodoGenerico();
+		NodoGenerico<T> aux = new NodoGenerico<T>();
 		aux.setDato(elem);
 		if (pos == 1) {
 			aux.setSiguiente(inicio);
 			inicio = aux;
 		} else {
-			NodoGenerico n = this.inicio;
-			NodoGenerico ant = null;
+			NodoGenerico<T> n = this.inicio;
+			NodoGenerico<T> ant = null;
 			int posActual = 1;
 			while (!(n == null) && (posActual < pos)) {
 				ant = n;
@@ -70,7 +70,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 
 	@Override
 	public boolean agregarFinal(T elem) {
-		NodoGenerico aux = new NodoGenerico();
+		NodoGenerico<T> aux = new NodoGenerico<T>();
 		aux.setDato(elem);
 		if (inicio == null) {
 			inicio = aux;
@@ -85,8 +85,8 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 
 	@Override
 	public boolean eliminar(T elem) {
-		NodoGenerico n = this.inicio;
-		NodoGenerico ant = null;
+		NodoGenerico<T> n = this.inicio;
+		NodoGenerico<T> ant = null;
 		while ((n != null) && (!n.getDato().equals(elem))) {
 			ant = n;
 			n = n.getSiguiente();
@@ -117,8 +117,8 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 			inicio = inicio.getSiguiente();
 			return true;
 		}
-		NodoGenerico n = this.inicio;
-		NodoGenerico ant = null;
+		NodoGenerico<T> n = this.inicio;
+		NodoGenerico<T> ant = null;
 		while (!(n == null) && (pos > 1)) {
 			pos--;
 			ant = n;
@@ -133,7 +133,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 
 	@Override
 	public boolean incluye(T elem) {
-		NodoGenerico n = this.inicio;
+		NodoGenerico<T> n = this.inicio;
 		while (!(n == null) && !(n.getDato().equals(elem)))
 			n = n.getSiguiente();
 		return !(n == null);
@@ -142,7 +142,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 	@Override
 	public String toString() {
 		String str = "";
-		NodoGenerico n = this.inicio;
+		NodoGenerico<T> n = this.inicio;
 		while (n != null) {
 			str = str + n.getDato() + " -> ";
 			n = n.getSiguiente();

@@ -1,36 +1,21 @@
 package tp03.ejercicio1;
 
-public class TipoGrama {
+public class TipoGrama extends NodoGenerico<String>{
 
-	private String dato;
 	private ListaEnlazadaGenerica<String> listaPalabras;
 	
 	public TipoGrama(String grama){
-		dato = grama;
-		listaPalabras = ListaEnlazadaGenerica<String>();
-	}
-	
-	public String getDato() {
-		return dato;
-	}
-	public void setDato(String dato) {
-		this.dato = dato;
+		this.dato = grama;
+		this.listaPalabras = new ListaEnlazadaGenerica<String>();
 	}
 	
 	public boolean agregarPalabra(String palabra){
 		listaPalabras.agregarFinal(palabra);
 		return true;
-		}
+	}
 	
 	public ListaEnlazadaGenerica<String> getListaPalabras() {
 		return listaPalabras;
 	}
-	
-	public 
-	
-	
-	
-	
-	
-
+		
 }

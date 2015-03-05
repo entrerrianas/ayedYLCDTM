@@ -1,8 +1,8 @@
 package tp03.ejercicio1;
 
 public class NodoGenerico<T> {
-	private T dato;
-	private NodoGenerico siguiente;
+	protected T dato;
+	protected NodoGenerico<T> siguiente;
 	
 	public T getDato() {
 		return dato;
@@ -10,10 +10,10 @@ public class NodoGenerico<T> {
 	public void setDato(T dato) {
 		this.dato = dato;
 	}
-	public NodoGenerico getSiguiente() {
+	public NodoGenerico<T> getSiguiente() {
 		return siguiente;
 	}
-	public void setSiguiente(NodoGenerico siguiente) {
+	public void setSiguiente(NodoGenerico<T> siguiente) {
 		this.siguiente = siguiente;
 	}
 
